@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 public class Appointment {
 
@@ -13,6 +15,8 @@ public class Appointment {
 
     private Long patientId;
     private Long doctorId;
+
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm")
     private LocalDateTime appointmentDate;
 
     // Getters and setters

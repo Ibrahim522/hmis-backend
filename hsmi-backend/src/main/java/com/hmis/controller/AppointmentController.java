@@ -29,6 +29,12 @@ public class AppointmentController {
         return appointmentRepository.findAll();
     }
 
+     @GetMapping("/doctor/{doctorId}")
+    public List<Appointment> getAppointmentsByDoctor(@PathVariable Long doctorId) {
+        return appointmentRepository.findByDoctorId(doctorId);
+    }
+
+
     // Fetch all patients from Patient Service
     @GetMapping("/patients")
     public ResponseEntity<String> getPatients() {
