@@ -19,7 +19,7 @@ public class OtpController {
         this.otpService = otpService;
     }
 
-    @PostMapping("/send-otp")
+    @PostMapping("/send-otp")   
     public ResponseEntity<?> sendOtp(@RequestBody Map<String, String> request) {
         String email = request.get("email");
         System.out.println("Received email for OTP: " + email);
