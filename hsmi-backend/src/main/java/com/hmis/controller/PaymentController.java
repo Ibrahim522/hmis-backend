@@ -1,5 +1,4 @@
 package com.hmis.controller;
-
 import com.stripe.Stripe;
 import com.stripe.model.PaymentIntent;
 import org.springframework.web.bind.annotation.*;
@@ -12,13 +11,11 @@ import java.util.Map;
 @CrossOrigin(origins = "http://localhost:3000")
 public class PaymentController {
 
-    private final String stripeSecretKey = "sk_test_51S2syLCjoVPMv76inPdAPowDQqfTPEZmlvcwltbFuW45YqpDHEStXEZMWYNfxC47nP86sdJYeW4L85ugEHefAC9b004Dg92RfQ";
-
+    private final String stripeSecretKey = System.getenv("STRIPE_API_KEY");
+        
     @PostMapping("/create-payment-intent")
     public Map<String, Object> createPaymentIntent(@RequestBody Map<String, Object> data) throws Exception {
         Stripe.apiKey = stripeSecretKey;
-
-
         Long amountInPkr = 1499L; 
         Long amountInPaisa = amountInPkr * 100;
         Map<String, Object> params = new HashMap<>();
