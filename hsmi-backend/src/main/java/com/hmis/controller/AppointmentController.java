@@ -29,11 +29,19 @@ public class AppointmentController {
         return appointmentRepository.findAll();
     }
 
-     @GetMapping("/doctor/{doctorId}")
+    @GetMapping("/doctor/{doctorId}")
     public List<Appointment> getAppointmentsByDoctor(@PathVariable Long doctorId) {
         return appointmentRepository.findByDoctorId(doctorId);
     }
 
+    @DeleteMapping("/{appointmentId}")
+    public ResponseEntity<Void> cancelAppointment(@PathVariable Long appointmentId) {
+        if (!appointmentRepository.existsById(appointmentId)) {
+            return ResponseEntity.notFound().build();
+        }
+        appointmentRepository.deleteById(appointmentId);
+        return ResponseEntity.noContent().build();
+    }
 
     // Fetch all patients from Patient Service
     @GetMapping("/patients")
