@@ -1,0 +1,93 @@
+2025-09-18T11:39:10.580+05:00  WARN 15256 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18h14m13s197ms847µs500ns).
+2025-09-18T11:44:16.641+05:00  INFO 15256 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-18T11:44:16.722+05:00  INFO 15256 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-18T11:44:16.911+05:00  INFO 15256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T11:44:16.928+05:00  INFO 15256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-18T11:44:16.928+05:00  INFO 15256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-18T11:44:46.928+05:00  INFO 17328 --- [main] com.hmis.HsmiBackendApplication          : Starting HsmiBackendApplication using Java 21.0.8 with PID 17328 (C:\Users\ibrahim.sanaullah\Downloads\Hsmi-backend\hsmi-backend\target\classes started by ibrahim.sanaullah in C:\Users\ibrahim.sanaullah\Downloads\Hsmi-backend\hsmi-backend)
+2025-09-18T11:44:46.928+05:00  INFO 17328 --- [main] com.hmis.HsmiBackendApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-09-18T11:44:48.258+05:00  INFO 17328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-18T11:44:48.517+05:00  INFO 17328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 238 ms. Found 3 JPA repository interfaces.
+2025-09-18T11:44:49.424+05:00  INFO 17328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-18T11:44:49.460+05:00  INFO 17328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-18T11:44:49.461+05:00  INFO 17328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-18T11:44:49.588+05:00  INFO 17328 --- [main] o.a.c.c.C.[.[.[/hsmi-context-path]       : Initializing Spring embedded WebApplicationContext
+2025-09-18T11:44:49.588+05:00  INFO 17328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2572 ms
+2025-09-18T11:44:49.851+05:00  INFO 17328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-18T11:44:49.973+05:00  INFO 17328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-18T11:44:50.024+05:00  INFO 17328 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-18T11:44:50.809+05:00  INFO 17328 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-18T11:44:50.905+05:00  INFO 17328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-18T11:44:51.269+05:00  INFO 17328 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:doctordb user=SA
+2025-09-18T11:44:51.284+05:00  INFO 17328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-18T11:44:51.352+05:00  WARN 17328 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-18T11:44:51.391+05:00  INFO 17328 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-18T11:44:52.996+05:00  INFO 17328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-18T11:44:53.138+05:00  INFO 17328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T11:44:53.847+05:00  WARN 17328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-18T11:44:53.901+05:00  WARN 17328 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4753b33a-4168-4c71-ac7e-a84bf10664b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-18T11:44:53.918+05:00  INFO 17328 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-18T11:44:54.477+05:00  INFO 17328 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:doctordb'
+2025-09-18T11:44:54.814+05:00  INFO 17328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/hsmi-context-path'
+2025-09-18T11:44:54.842+05:00  INFO 17328 --- [main] com.hmis.HsmiBackendApplication          : Started HsmiBackendApplication in 8.735 seconds (process running for 9.625)
+2025-09-18T11:45:32.106+05:00  INFO 17328 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-18T11:45:32.129+05:00  INFO 17328 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-18T11:45:32.165+05:00  INFO 17328 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T11:45:32.168+05:00  INFO 17328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-18T11:45:32.170+05:00  INFO 17328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-18T11:45:59.497+05:00  INFO 14520 --- [main] com.hmis.HsmiBackendApplication          : Starting HsmiBackendApplication using Java 21.0.8 with PID 14520 (C:\Users\ibrahim.sanaullah\Downloads\Hsmi-backend\hsmi-backend\target\classes started by ibrahim.sanaullah in C:\Users\ibrahim.sanaullah\Downloads\Hsmi-backend\hsmi-backend)
+2025-09-18T11:45:59.502+05:00  INFO 14520 --- [main] com.hmis.HsmiBackendApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-09-18T11:46:00.863+05:00  INFO 14520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-18T11:46:01.142+05:00  INFO 14520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 257 ms. Found 3 JPA repository interfaces.
+2025-09-18T11:46:02.287+05:00  INFO 14520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-18T11:46:02.323+05:00  INFO 14520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-18T11:46:02.323+05:00  INFO 14520 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-18T11:46:02.548+05:00  INFO 14520 --- [main] o.a.c.c.C.[.[.[/hsmi-context-path]       : Initializing Spring embedded WebApplicationContext
+2025-09-18T11:46:02.550+05:00  INFO 14520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2964 ms
+2025-09-18T11:46:02.965+05:00  INFO 14520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-18T11:46:03.100+05:00  INFO 14520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-18T11:46:03.173+05:00  INFO 14520 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-18T11:46:03.630+05:00  INFO 14520 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-18T11:46:03.665+05:00  INFO 14520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-18T11:46:03.939+05:00  INFO 14520 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:doctordb user=SA
+2025-09-18T11:46:03.942+05:00  INFO 14520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-18T11:46:03.983+05:00  WARN 14520 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-18T11:46:04.020+05:00  INFO 14520 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-18T11:46:05.364+05:00  INFO 14520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-18T11:46:05.487+05:00  INFO 14520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T11:46:07.098+05:00  WARN 14520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-18T11:46:07.298+05:00  WARN 14520 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 11d7286d-9f83-47ee-9435-d558ce97f677
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-18T11:46:07.334+05:00  INFO 14520 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-18T11:46:08.333+05:00  INFO 14520 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:doctordb'
+2025-09-18T11:46:08.898+05:00  INFO 14520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/hsmi-context-path'
+2025-09-18T11:46:08.919+05:00  INFO 14520 --- [main] com.hmis.HsmiBackendApplication          : Started HsmiBackendApplication in 10.386 seconds (process running for 11.565)
+2025-09-18T13:11:56.672+05:00  WARN 14520 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m52s77ms236µs200ns).
+2025-09-18T13:50:34.545+05:00  INFO 14520 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-18T13:50:34.576+05:00  INFO 14520 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-18T13:50:34.614+05:00  INFO 14520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T13:50:34.618+05:00  INFO 14520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-18T13:50:34.622+05:00  INFO 14520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

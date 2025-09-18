@@ -20,6 +20,8 @@
 	<developers>
 		<developer/>
 	</developers>
+	<packaging>war</packaging>
+
 	<scm>
 		<connection/>
 		<developerConnection/>
@@ -68,16 +70,19 @@
 		<groupId>com.stripe</groupId>
 		<artifactId>stripe-java</artifactId>
 		<version>29.0.0</version>
-</dependency>
-
-
+	</dependency>
     <!-- JSON -->
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
     </dependency>
-	</dependencies>
+	<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
 
+	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
