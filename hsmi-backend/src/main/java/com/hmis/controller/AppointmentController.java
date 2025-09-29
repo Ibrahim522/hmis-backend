@@ -13,14 +13,14 @@
     @RestController
     @RequestMapping("/appointments")
     
-    // @CrossOrigin(origins = "http://localhost:3000")
     public class AppointmentController {
 
         @Autowired
         private AppointmentRepository appointmentRepository;
 
-        private final RestTemplate restTemplate = new RestTemplate();
-
+        // private final RestTemplate restTemplate = new RestTemplate();
+        @Autowired
+        private RestTemplate restTemplate;
         @PostMapping("/book")
         public Appointment bookAppointment(@RequestBody Appointment appointment) {
             return appointmentRepository.save(appointment);
@@ -45,18 +45,18 @@
             return ResponseEntity.noContent().build();
         }
 
-        // Fetch all patients from Patient Service
-        @GetMapping("/patients")
-        public ResponseEntity<String> getPatients() {
-            String patientsUrl = "http://3.26.144.86:8080/hsmi-context-path/patients";
-            String patients = restTemplate.getForObject(patientsUrl, String.class);
-            return ResponseEntity.ok(patients);
-        }
-        // Fetch all doctors from Doctor Service
-        @GetMapping("/doctors")
-        public ResponseEntity<String> getDoctors() {
-            String doctorsUrl = "http://3.26.144.86:8080/hsmi-context-path/doctors";
-            String doctors = restTemplate.getForObject(doctorsUrl, String.class);
-            return ResponseEntity.ok(doctors);
-        }
+  
+        // @GetMapping("/patients")
+        // public ResponseEntity<String> getPatients() {
+        //     String patientsUrl = "http://3.26.144.86:8080/hsmi-context-path/patients";
+        //     String patients = restTemplate.getForObject(patientsUrl, String.class);
+        //     return ResponseEntity.ok(patients);
+        // }
+      
+        // @GetMapping("/doctors")
+        // public ResponseEntity<String> getDoctors() {
+        //     String doctorsUrl = "http://3.26.144.86:8080/hsmi-context-path/doctors";
+        //     String doctors = restTemplate.getForObject(doctorsUrl, String.class);
+        //     return ResponseEntity.ok(doctors);
+        // }
     }

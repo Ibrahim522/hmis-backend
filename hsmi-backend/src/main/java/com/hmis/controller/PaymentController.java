@@ -10,13 +10,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/payment")
-// @CrossOrigin(origins = "http://localhost:3000")
 public class PaymentController {
 
-    // private final String stripeSecretKey = System.getenv("STRIPE_API_KEY");
-     @Value("${stripeSecretKey}")
+    @Value("${stripeSecretKey}")
     private String stripeSecretKey;
-   
 
      // private final String stripeSecretKey = "sk_test_51S2syLCjoVPMv76inPdAPowDQqfTPEZmlvcwltbFuW45YqpDHEStXEZMWYNfxC47nP86sdJYeW4L85ugEHefAC9b004Dg92RfQ";
     @PostMapping("/create-payment-intent")
@@ -36,8 +33,6 @@ public class PaymentController {
         params.put("automatic_payment_methods", Map.of("enabled", true));
 
         PaymentIntent intent = PaymentIntent.create(params);
-
-        
         response.put("clientSecret", intent.getClientSecret());
         response.put("amount", amountInPaisa);  // send amount to frontend for display
         return response;

@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/otp")
-// @CrossOrigin(origins = "http://localhost:3000")  
+
 public class OtpController {
 
     private final OtpService otpService;
